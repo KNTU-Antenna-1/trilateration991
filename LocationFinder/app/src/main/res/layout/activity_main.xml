@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Description_text"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:text="First create a map then you can choose it and find your location on it." />
+
+        <Button
+            android:id="@+id/Choose_map"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:onClick="Click"
+            android:text="Choose map" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/X_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="X(deci)"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/Y_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Y(deci)."
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/H_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="H(deci)"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/multi_story_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Multi_storey" />
+
+            <EditText
+                android:id="@+id/floor_n_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="floors"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ID_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="map ID"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:onClick="Click"
+            android:text="create button" />
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:onClick="Click"
+            android:text="quit" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
